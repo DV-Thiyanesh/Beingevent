@@ -1,0 +1,739 @@
+<!--
+author: W3layouts
+author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Eventica | Merchant-Details</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Grocery Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<!-- <link href="/css/addtocart/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /> -->
+<link href="/css/addtocart/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- font-awesome icons -->
+<!-- <link href="/css/addtocart/css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />  -->
+<!-- //font-awesome icons -->
+<!-- js -->
+<!-- <script src="/js/addtocart/js/jquery-1.11.1.min.js"></script> -->
+<!-- //js -->
+ <!-- <script src='/js/addtocart/js/okzoom.js'></script> -->
+  <script>
+    $(function(){
+      $('#example').okzoom({
+        width: 150,
+        height: 150,
+        border: "1px solid black",
+        shadow: "0 0 5px #000"
+      });
+    });
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147461007-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-147461007-1');
+</script>
+<link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="/js/addtocart/js/move-top.js"></script>
+<script type="text/javascript" src="/js/addtocart/js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<link rel="stylesheet" href="/css/bootstrap.css" />
+<!-- Template styles-->
+<link rel="stylesheet" href="/css/style.css" />
+<!-- Responsive styles-->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- FontAwesome -->
+<link rel="stylesheet" href="/css/font-awesome.css" />
+<!-- Animation -->
+<!-- <link rel="stylesheet" href="css/animate.css"> -->
+<!-- Colorbox -->
+<link rel="stylesheet" href="/css/colorbox.css" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>   
+
+<style>
+ .fade-in{
+  animation: animationFrames ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: animationFrames ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: animationFrames ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: animationFrames ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: animationFrames ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+
+@keyframes animationFrames{
+  0% {
+    opacity:0;
+    transform:  translate(0px,-25px)  ;
+  }
+  100% {
+    opacity:1;
+    transform:  translate(0px,0px)  ;
+  }
+}
+
+@-moz-keyframes animationFrames{
+  0% {
+    opacity:0;
+    -moz-transform:  translate(0px,-25px)  ;
+  }
+  100% {
+    opacity:1;
+    -moz-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-webkit-keyframes animationFrames {
+  0% {
+    opacity:0;
+    -webkit-transform:  translate(0px,-25px)  ;
+  }
+  100% {
+    opacity:1;
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-o-keyframes animationFrames {
+  0% {
+    opacity:0;
+    -o-transform:  translate(0px,-25px)  ;
+  }
+  100% {
+    opacity:1;
+    -o-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-ms-keyframes animationFrames {
+  0% {
+    opacity:0;
+    -ms-transform:  translate(0px,-25px)  ;
+  }
+  100% {
+    opacity:1;
+    -ms-transform:  translate(0px,0px)  ;
+  }
+}
+	  .walletAddress{
+      float: left;
+      width: 20px;
+      height: 30px;
+    }
+	   .droplist p {
+      font-weight: 600;
+    }
+    .row img {
+    margin-top: 7px;
+    margin-bottom: 0px;
+}
+    img{
+    max-width: 100%;
+}
+.droplist p {
+      text-transform:uppercase;
+      font-size: 14px;
+    }
+  .snipcart-details input.button{
+    width:100% !important;
+  }
+  input value{
+    font-size: 34px !important;
+  }
+   /* .last input.button :hover{
+	background-color: #ff0673;
+	
+  }  */
+  .tickers-desktop__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    -webkit-box-flex: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2;
+}
+.tickers-desktop__item {
+    border-right: 1px solid #324149;
+    padding: 0 15px;
+    /* -webkit-box-sizing: border-box; */
+    box-sizing: border-box;
+}
+.tickers-desktop__name {
+    font-size: inherit;
+    font-weight: 100;
+    color: #fabf2c;
+}
+.tickers-desktop__price {
+    font-size: inherit;
+    color: #fff;
+}
+
+.tickers-desktop__link
+{
+  text-decoration: none;
+    font-size: 13px;
+    line-height: 1;
+    display: block;
+}
+.row {
+    margin-right: -78px;
+    margin-left: -60px;
+}
+
+@media screen and (max-width: 450px) {
+      .row {
+        margin-right: -6px;
+    margin-left: 4px;
+      }
+}
+.example img {
+  width: 225px;
+  height: 200px;
+
+ 
+}
+.open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #ff0673;
+    border-color: #ff0673;
+}
+.open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover{
+    color: #fff;
+    background-color: #ff0673;
+    border-color: #ff0673;
+}
+#qrcode {
+      float: left;
+      width: 20px;
+      height: 30px;
+      
+    }
+	button.btn.btn-primary.dropdown-toggle {
+    background: #33333333;
+}
+.swal-text {
+  background-color: #FEFAE3;
+  padding: 17px;
+  border: 1px solid #F0E1A1;
+  display: block;
+  margin: 22px;
+  text-align: center;
+  color: #333333;
+}
+.swal-title {
+  color: #333333;
+}
+.swal-button {
+  padding: 7px 19px;
+  border-radius: 2px;
+  background-color: #ff0673;
+  color: #FEFAE3;
+  font-size: 12px;
+  border: unset;
+  /* border: 1px solid #ff0673; */
+  /* text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3); */
+}
+.swal-button:hover {
+  color: #333333;
+  background-color: #FEFAE3;
+  border: unset;
+}
+</style>
+<script type="text/javascript" src="/js/qr/jquery.min.js"></script>
+<script type="text/javascript" src="/js/qr/qrcode.js"></script> 
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+	
+<body>
+<!-- header -->
+<div class="wrapper fade-in">
+<div class="body-inner">
+    <header id="header" class="header header-transparent">
+      <div class="container">
+        <div class="row">
+          <!-- <div class="navbar-header">
+            <div class="logo"> -->
+              <a href="/">
+                <img src="/images/logo.png" alt="" style="margin-left:20px; margin-top: 20px;" />
+              </a>
+            <!-- </div>
+          </div>
+          <div class="site-nav-inner"> -->
+            <button
+              type="button"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span> <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <nav
+              class="collapse navbar-collapse navbar-responsive-collapse pull-right"
+            >
+              <ul class="nav navbar-nav">
+				<li ><a href="/">Home </a></li>
+				<li><a href="/aboutus">About Us</a></li>
+               
+               
+				<li>
+					<div class="dropdown">
+					
+						 <button class="btn btn-primary dropdown-toggle" style="font-size: 14px;
+						 font-family: Open Sans, sans-serif;
+						 padding: 2px;
+						 color: #ffffff;
+						 font-weight: bold; " aria-hidden="true" data-toggle="dropdown">Events <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+						<!-- < class="btn btn-primary dropdown-toggle" style="color: cornsilk;" aria-hidden="true" data-toggle="dropdown">Events> -->
+					  <ul class="dropdown-menu dropdown-menu-right" style="width:10px;">
+						
+						<div>
+						 <!-- <a href="/events" ><strong>Upcoming Events</strong>  </a>
+						  <a   href="/eventhistory" style="font-size: 14px;"><strong>Previous Events</strong>  </a> -->
+						<!-- <a href="/eventhistory" style="font-size: 14px; margin-bottom: 2px; font-weight:600px !important; text-transform: none;"><strong></strong>Previous Events</a> -->
+						<!-- <p style="font-size: 9px; margin-bottom: 2px; font-weight:800px !important; text-transform: none;"><HIi</p> -->
+						<!-- <p>Balance: <strong>10,000 EVN</strong></p> -->
+						<p class="banner-btn text-center" style="text-align: left;  margin:0px!important;">
+						  <a href="/events" class="" style="font-size:14px !important; text-align: left; font-weight:600px !important; margin:0px !important; "><strong>UPCOMING EVENTS</strong></a></br>
+						  <a href="/eventhistory"  class="" style="font-size:14px !important; text-align: left; font-weight:600px !important; margin:0px !important"><strong>PREVIOUS EVENTS</strong></a>
+						</p>
+						 
+						
+						
+				   
+					  
+					</div>
+					  </ul>
+					
+					</div>
+				</li> 
+				<li class="active"><a href="/merchant">Merchandise</a></li>
+				<li><a href="/cryptonews/1">Crypto News</a></li>
+				<li><a href="/blog">Blog</a></li>
+				<li><a href="/contactus">Contact Us </a></li>
+			
+				<% if(sess.user == null) {%>
+					<li ><a href="/signin" style="font-size:18px!important;"><i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
+	
+					<li>
+						<p>
+					   
+					<label id="usd" > <input type="radio"  name="opt"  value="head"> INR</label>
+				  </br>
+					<label id="inr" style="display: none;"><input type="radio"   name="opt"  value="bod"> USD</label>
+	  </p></li>
+					 <li id="head" style="display: none" >
+						<p style="margin: 0%;"><span data-e2e="name" style="font-size:15px!important;"class="tickers-desktop__name">BTC</span> <span data-e2e="price" style="font-size:14px!important; font-weight: bold;"class="tickers-desktop__price">$<%=finalbtc%></span> 
+						</br>
+						  <span data-e2e="name" style="font-size:15px!important;"class="tickers-desktop__name">ETH</span> <span data-e2e="price"style="font-size:14px!important;font-weight: bold;" class="tickers-desktop__price">$<%=eth%></span>
+					  </p>
+					</li>     
+					<li id="bod" >
+					  <p style="margin: 0%;"><span data-e2e="name" style="font-size:15px!important;"class="tickers-desktop__name">BTC</span> <span data-e2e="price" style="font-size:14px!important; font-weight: bold;"class="tickers-desktop__price">₹<%=finalbtc1%></span> 
+					  </br>
+						<span data-e2e="name" style="font-size:15px!important;"class="tickers-desktop__name">ETH</span> <span data-e2e="price"style="font-size:14px!important;font-weight: bold;" class="tickers-desktop__price">₹<%=finaleth1%></span>
+					</p>
+				  </li>      
+					<%}%>
+			
+				<% if(sess.user != null) {%>
+					<li>
+				
+					 
+							<div class="dropdown">
+									<i class="fa fa-user" class="btn btn-primary dropdown-toggle" style="color: cornsilk;" aria-hidden="true" data-toggle="dropdown"></i>
+									<% if(sess.user.address) {%>
+								  <ul class="dropdown-menu dropdown-menu-right" style="width:335px;">
+									
+									<div>
+									  
+									
+									
+								
+									<div style="width:52px; float: left;"><img src="/qr/<%=sess.user.address%>"></div>
+									  
+									
+									 
+									<span class="droplist"  style="line-break: normal; columns: #333333; float:right;"><p style="margin-bottom: 2px;"><strong><%=sess.user.firstname+" "+sess.user.lastname%></strong>  </p>
+									<p style="font-size: 14px; margin-bottom: 2px; font-weight:600px !important; text-transform: none;"><%=sess.user.email%></p>
+									<p style="font-size: 9px; margin-bottom: 2px; font-weight:800px !important; text-transform: none;"><%=sess.user.address%></p>
+									<p>Balance: <strong><%=balance%> EVN</strong></p>
+									
+									  
+									  <p class="banner-btn text-center" style="text-align: left; margin-top: 11px!important; margin-left: 0px!important;">
+										<a href="/transfer" class="btn btn-primary" style="font-size:12px !important; margin-left:0px !important; background-color: #ff0673; ">Transfer</a>
+										<a href="/profile"  class="btn btn-primary" style="font-size:12px !important; background-color: #ff0673;">Update Profile</a>
+									  </p>
+									
+							   
+								  </span>
+								</div>
+								  </ul>
+								  <%} else { %>
+									<ul class="dropdown-menu dropdown-menu-right" style="width:405px;">
+									
+									  <div>
+										
+									  
+									  
+										
+										<div class="walletAddress" style="width:120px; height:120px; font-size: 11px;">
+									Create Wallet Address</div>
+										   
+									   
+									  <span class="droplist"  style="line-break: normal; columns: #333333; float:right;"><p style="margin-bottom: 2px;"><strong><%=sess.user.firstname+" "+sess.user.lastname%></strong>  </p>
+									  <p style="font-size: 14px; margin-bottom: 2px; font-weight:600px !important; text-transform: none;"><%=sess.user.email%></p>
+									  <p style="font-size: 9px; margin-bottom: 2px; font-weight:800px !important; text-transform: none;"><%=sess.user.address%></p>
+									  <p>Balance: <strong>0 EVN</strong></p>
+									  
+										
+										<p class="banner-btn text-center" style="text-align: left; margin-top: 11px!important; margin-left: 0px!important;">
+										  <a href="/transfer" class="btn btn-primary" style="font-size:12px !important; margin-left:0px !important; background-color: #ff0673;">Transfer</a>
+										  <a href="/profile"  class="btn btn-primary" style="font-size:12px !important; background-color: #ff0673;">Update Profile</a>
+										</p>
+									  
+								 
+									</span>
+								  </div>
+									</ul>
+									<%}%>
+								</div>
+					</li> 
+					<li><a style="font-size: 18px!important;" href="/logout"><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
+	
+					<%if(sess.user.country !== "Ind"){%>
+						<li id="head" >
+						   <p style="margin: 0%;"><span data-e2e="name" style="font-size:15px!important;"class="tickers-desktop__name">BTC</span> <span data-e2e="price" style="font-size:14px!important; font-weight: bold;"class="tickers-desktop__price">$<%=finalbtc%></span> 
+						   </br>
+							 <span data-e2e="name" style="font-size:15px!important;"class="tickers-desktop__name">ETH</span> <span data-e2e="price"style="font-size:14px!important;font-weight: bold;" class="tickers-desktop__price">$<%=eth%></span>
+						 </p>
+					   </li> 
+					 <%}%>
+					 <%if(sess.user.country == "Ind"){%>
+					   <li id="bod" >
+						 <p style="margin: 0%;"><span data-e2e="name" style="font-size:15px!important;"class="tickers-desktop__name">BTC</span> <span data-e2e="price" style="font-size:14px!important; font-weight: bold;"class="tickers-desktop__price">₹<%=finalbtc1%></span> 
+						 </br>
+						   <span data-e2e="name" style="font-size:15px!important;"class="tickers-desktop__name">ETH</span> <span data-e2e="price"style="font-size:14px!important;font-weight: bold;" class="tickers-desktop__price">₹<%=finaleth1%></span>
+					   </p>
+					 </li> 
+					 <%}%>
+					<%}%>
+				
+
+               
+				                
+           
+					
+              </ul>
+            </nav>
+          <!-- </div>
+        </div> -->
+      </div>
+	</header>
+	<script type="text/javascript">
+  
+		window.onload = function() {
+		  $( document ).ready(function() {
+	  
+	 
+	  $("input:radio").click(function() {
+		if($(this).val() == "head") {
+		  $("#head").show();
+		  $("#bod").hide();
+		  $("#usd").hide();
+		  $("#inr").show();
+		} else {
+		  $("#head").hide();
+		  $("#bod").show();
+		  $("#inr").hide();
+		  $("#usd").show();
+		}
+	  });
+	});
+		}
+  </script>  
+   
+	    <br>
+    <br>
+<!-- script-for sticky-nav -->
+	<!-- <script>
+	$(document).ready(function() {
+		 var navoffeset=$(".agileits_header").offset().top;
+		 $(window).scroll(function(){
+			var scrollpos=$(window).scrollTop(); 
+			if(scrollpos >=navoffeset){
+				$(".agileits_header").addClass("fixed");
+			}else{
+				$(".agileits_header").removeClass("fixed");
+			}
+		 });
+		 
+	});
+	</script> -->
+<!-- //script-for sticky-nav -->
+
+
+
+							
+					
+			
+		<div class="w3l_banner_nav_right">
+			
+			<div class="agileinfo_single">
+				<h5>Event Cap Adidas Pure</h5>
+				<div class="col-md-4 agileinfo_single_left">  
+					<img id="example" src="<%=imageurl+view.proimg%>" alt=" " class="img-responsive" />
+				</div>
+				<div class="col-md-8 agileinfo_single_right">
+					<div class="rating1">
+						<span class="starRating">
+							<input id="rating5" type="radio" name="rating" value="5">
+							<label for="rating5">5</label>
+							<input id="rating4" type="radio" name="rating" value="4">
+							<label for="rating4">4</label>
+							<input id="rating3" type="radio" name="rating" value="3" checked>
+							<label for="rating3">3</label>
+							<input id="rating2" type="radio" name="rating" value="2">
+							<label for="rating2">2</label>
+							<input id="rating1" type="radio" name="rating" value="1">
+							<label for="rating1">1</label>
+						</span>
+					</div>
+					<div class="w3agile_description">
+						<h4>Description :</h4>
+						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+							officia deserunt mollit anim id est laborum.Duis aute irure dolor in 
+							reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+							pariatur.</p>
+          </div>
+          <div class="w3agile_description">
+					<h4>Size :</h4>
+					<h4>
+            <form action="">
+					  <input
+						type="radio"
+						name="size"
+						value="XS"
+					   
+            />XS
+            &nbsp;
+					  <input
+						type="radio"
+						name="size"
+						value="S"
+					
+            />S
+            &nbsp;
+					  <input
+						type="radio"
+						name="size"
+						value="M"
+						
+            />M
+            &nbsp;
+					  <input
+						type="radio"
+						name="size"
+						value="L"
+					
+            />L
+            &nbsp;
+					  <input
+						type="radio"
+						name="size"
+						value="XL"
+					
+            />XL
+            &nbsp;
+					  <input
+						type="radio"
+						name="size"
+						value="XXL"
+					
+            />XXL<br />
+          </form>
+          </h4>
+        </div>
+					<div class="snipcart-item block">
+						<div class="snipcart-thumb agileinfo_single_right_snipcart">
+							<h4><i class="fa fa-inr"></i> <%=view.productPrice%> <!-- <span>$25.00</span>--></h4>
+						</div>
+						<div class="snipcart-details agileinfo_single_right_details">
+							<form action="#" method="post">
+								<fieldset>
+									<input type="hidden" name="cmd" value="_cart" />
+									<input type="hidden" name="add" value="1" />
+									<input type="hidden" name="business" value=" " />
+									<input type="hidden" name="item_name" value="<%=view.productName%>" />
+									<input type="hidden" name="amount" value="<%=view.productPrice%>" />
+									<input type="hidden" name="discount_amount" value="0.00" />
+									<input type="hidden" name="currency_code" value="INR" />
+									<input type="hidden" name="return" value=" " />
+									<input type="hidden" name="cancel_return" value=" " />
+									<input type="submit" name="submit" value="Add to cart" class="button" />
+								</fieldset>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	</div>
+<!-- //banner -->
+<!-- brands -->
+
+<!-- //footer -->
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/addtocart/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script>
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+<script src="/js/addtocart/js/minicart.js"></script>
+<script src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/bootstrap.js"></script>
+<script>
+		paypal.minicart.render();
+
+		paypal.minicart.cart.on('merchantcheckout', function (evt) {
+			var items = this.items(),
+				len = items.length,
+				total = 0,
+				i;
+
+			// Count the number of each item in the cart
+			for (i = 0; i < len; i++) {
+				total += items[i].get('quantity');
+			}
+
+			if (total < 1) {
+				alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
+				evt.preventDefault();
+			}
+		});
+
+	</script>
+	 <!-- Start of Zendesk Widget script -->
+<!-- <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=web_widget/smartchainerssupport.zendesk.com"></script> -->
+<!-- End of Zendesk Widget script -->
+    <!-- Sponsors end -->
+	 <footer id="footer" class="footer ">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-6">
+			  <div class="copyright-info">
+				<span>Copyright © 2018 Eventica. All Rights Reserved.</span>
+			  </div>
+			  <!-- Copyright info end -->
+			</div>
+			<!-- Content col end -->
+			<div class="col-md-6">
+			  <!-- Footer menu end -->
+			  <div class="footer-social text-center">
+				<ul>
+				  <li>
+					<a href="https://www.facebook.com/beingevent" target="_blank"><i class="fa fa-facebook"></i></a>
+				  </li>
+				  <li>
+					<a href="https://twitter.com/beingevent" target="_blank"><i class="fa fa-twitter"
+						target="_blank"></i></a>
+				  </li>
+				  <li>
+					<a href="https://www.youtube.com/channel/UCjyAFms3tfplMLBr79khb-g" target="_blank"><i
+						class="fa fa-youtube" target="_blank"></i></a>
+				  </li>
+
+				  <li>
+					<a href="https://www.instagram.com/being_event/" target="_blank"><i
+						class="fa fa-instagram"></i></a>
+				  </li>
+				  <li>
+					<a href="https://t.me/beingevent" target="_blank"><i class="fa fa-paper-plane"></i></a>
+				  </li>
+				</ul>
+			  </div>
+			  <!-- Footer social end -->
+			</div>
+		  </div>
+		  <!-- Content row end -->
+		</div>
+		<!-- Container end -->
+		<div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix" style="display: block;">
+		
+			<button class="btn btn-primary"> <a href="#" style="color:#ffffff;"  class="cd-top text-replace js-cd-top"><i class="fa fa-angle-up"></i></a></button>
+	   
+		</button> 
+		</div>
+	  </footer>
+	  <script src="js/move/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+    <script src="js/move/main.js"></script>
+</body>
+</html>

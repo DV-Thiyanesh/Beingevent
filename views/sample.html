@@ -1,0 +1,24 @@
+<li>
+                    <div class="dropdown">
+                        <i class="fa fa-user" class="btn btn-primary dropdown-toggle" style="color: cornsilk;" aria-hidden="true" data-toggle="dropdown"></i>
+                        <% if(sess.user.address) {%>
+                      <ul class="dropdown-menu dropdown-menu-right" style="width:335px;">
+                        
+                        <div>
+                         <span class="droplist"  style="line-break: normal; columns: #333333; float:right;"><p style="margin-bottom: 2px;"><strong><%=sess.user.firstname+" "+sess.user.lastname%></strong>  </p>
+                        <p style="font-size: 14px; margin-bottom: 2px; font-weight:600px !important; text-transform: none;"><%=sess.user.email%></p>
+                        <p style="font-size: 9px; margin-bottom: 2px; font-weight:800px !important; text-transform: none;"><%=sess.user.address%></p>
+                       
+                          
+                          <p class="banner-btn text-center" style="text-align: left; margin-top: 11px!important; margin-left: 0px!important;">
+                            <a href="/transfer" class="btn btn-primary" style="font-size:12px !important; margin-left:0px !important; ">Transfer</a>
+                            <a href="/profile" target="_blank" class="btn btn-primary" style="font-size:12px !important;">Update Profile</a>
+                          </p>
+                        
+                   
+                      </span>
+                    </div>
+                      </ul>
+                    
+                    </div>
+                </li> 

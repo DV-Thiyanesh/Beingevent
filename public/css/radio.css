@@ -1,0 +1,28 @@
+
+
+.example{
+  margin-bottom : 1.5em !important;
+}
+
+
+input[type=radio   ]:not(old){
+  width   : 28px !important;
+  margin  : 0 !important;
+  padding : 0 !important;
+  opacity : 0;
+}
+
+
+input[type=radio   ]:not(old) + label{
+  display      : inline-block !important;
+  margin-left  : -28px !important;
+  padding-left : 28px !important;
+  background   : url('checks.png') no-repeat 0 0 !important;
+  line-height  : 24px !important;
+}
+
+
+
+input[type=radio]:not(old):checked + label{
+  background-position : 0 -48px !important;
+}

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta
+      name="google-site-verification"
+      content="eS0HL-_Qh9vBPvedOzUZS0CQKcnQbboj_JDqJGXDsM0"
+    />
+
+    <!-- Basic Page Needs
+================================================== -->
+    <meta charset="utf-8" />
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147461007-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-147461007-1');
+</script>
+    <!-- Mobile Specific Metas
+================================================== -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0"
+    />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <!-- Site Title -->
+    <title>Home | Exchange</title>
+
+    <!--Favicon-->
+    <link
+      rel="shortcut icon"
+      href="http://www.eventica.io/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="http://www.eventica.io/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- CSS
+    ================================================== -->
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- Template styles-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive styles-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <!-- Animation -->
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
+    <!-- Colorbox -->
+    <link rel="stylesheet" href="css/colorbox.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+        .walletAddress{
+      float: left;
+      width: 20px;
+      height: 30px;
+    }
+         .droplist p {
+      font-weight: 600;
+    }
+    .row img {
+    margin-top: 7px;
+    margin-bottom: 0px;
+}
+    img{
+    max-width: 100%;
+}
+.droplist p {
+      text-transform:uppercase;
+      font-size: 14px;
+    }
+      dropdown-menu dropdown-menu-right img {
+      float: left;
+    }
+
+    .dropdown i:hover {
+      background: #ff0673;
+    }
+
+   
+
+    
+    #qrcode {
+      float: left;
+      width: 20px;
+      height: 30px;
+      /* margin-top:10px; */
+    }
+
+    hr {
+      display: block;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      margin-left: auto;
+      margin-right: auto;
+      border-style: inset;
+      border-width: 1px;
+    }
+    
+    .tickers-desktop__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    -webkit-box-flex: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2;
+}
+.tickers-desktop__item {
+    border-right: 1px solid #324149;
+    padding: 0 15px;
+    /* -webkit-box-sizing: border-box; */
+    box-sizing: border-box;
+}
+.tickers-desktop__name {
+    font-size: inherit;
+    font-weight: 100;
+    color: #fabf2c;
+}
+.tickers-desktop__price {
+    font-size: inherit;
+    color: #fff;
+}
+
+.tickers-desktop__link
+{
+  text-decoration: none;
+    font-size: 13px;
+    line-height: 1;
+    display: block;
+}
+.row {
+    margin-right: -60px;
+    margin-left: -55px;
+}
+
+@media screen and (max-width: 450px) {
+      .row {
+        margin-right: -10px;
+    margin-left: 6px;
+      }
+}
+.open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #ff0673;
+    border-color: #ff0673;
+}
+.open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover{
+    color: #fff;
+    background-color: #ff0673;
+    border-color: #ff0673;
+}
+
+    
+    </style>
+    <script src="js/move/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+    <script src="js/move/main.js"></script>
+    <script type="text/javascript" src="js/qr/jquery.min.js"></script>
+    <script type="text/javascript" src="js/qr/qrcode.js"></script>
+  </head>
+  <body>
+    <div class="body-inner">
+      <header id="header" class="header header-transparent">
+        <div class="container">
+          <div class="row">
+            <!-- <div class="navbar-header">
+              <div class="logo"> -->
+                <a href="/">
+                  <img src="images/logo.png" alt="" style="margin-top: 20px;"/>
+                </a>
+              <!-- </div>
+            </div>
+            <div class="site-nav-inner"> -->
+              <button
+                type="button"
+                class="navbar-toggle"
+                data-toggle="collapse"
+                data-target=".navbar-collapse"
+              >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span> <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <nav
+                class="collapse navbar-collapse navbar-responsive-collapse pull-right"
+              >
+                <ul class="nav navbar-nav">
+                  <li ><a href="/eventica">Home </a></li>
+                  <li><a href="/aboutus">About Us</a></li>
+                  
+                 
+                  <li>
+                    <div class="dropdown">
+                    
+                         <button class="btn btn-primary dropdown-toggle" style="font-size: 14px;
+                         font-family: Open Sans, sans-serif;
+                         padding: 2px;
+                         color: #ffffff;
+                         font-weight: bold;   background: #33333333;" aria-hidden="true" data-toggle="dropdown">Events <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+                        <!-- < class="btn btn-primary dropdown-toggle" style="color: cornsilk;" aria-hidden="true" data-toggle="dropdown">Events> -->
+                      <ul class="dropdown-menu dropdown-menu-right" style="width:10px;">
+                        
+                        <div>
+                         <!-- <a href="/events" ><strong>Upcoming Events</strong>  </a>
+                          <a   href="/eventhistory" style="font-size: 14px;"><strong>Previous Events</strong>  </a> -->
+                        <!-- <a href="/eventhistory" style="font-size: 14px; margin-bottom: 2px; font-weight:600px !important; text-transform: none;"><strong></strong>Previous Events</a> -->
+                        <!-- <p style="font-size: 9px; margin-bottom: 2px; font-weight:800px !important; text-transform: none;"><HIi</p> -->
+                        <!-- <p>Balance: <strong>10,000 EVN</strong></p> -->
+                        <p class="banner-btn text-center" style="text-align: left;  margin:0px!important;">
+                          <a href="/events" class="" style="font-size:14px !important; text-align: left; font-weight:600px !important; margin:0px !important; "><strong>UPCOMING EVENTS</strong></a></br>
+                          <a href="/eventhistory"  class="" style="font-size:14px !important; text-align: left; font-weight:600px !important; margin:0px !important"><strong>PREVIOUS EVENTS</strong></a>
+                        </p>
+                         
+                        
+                        
+                   
+                      
+                    </div>
+                      </ul>
+                    
+                    </div>
+                </li> 
+                 
+                  <li ><a href="/merchant">Merchandise</a></li>
+                  <li class="active"><a href="/exchange">Exchange</a></li>
+                  <li><a href="/cryptonews">Crypto News</a></li>
+                  <li><a href="/blog">Blog</a></li>
+                   <li><a href="/contactus">Contact Us </a></li>
+               
+                    <li>
+                
+                        <div class="dropdown">
+                            <i class="fa fa-user" class="btn btn-primary dropdown-toggle" style="color: cornsilk;" aria-hidden="true" data-toggle="dropdown"></i>
+                            <% if(sess.user.address) {%>
+                          <ul class="dropdown-menu dropdown-menu-right" style="width:335px;">
+                            
+                            <div>
+                              
+                            
+                            <input id="text" type="text" value="<%=sess.user.address%>" style="display:none;" />
+                        
+                            <div style="width:52px; float: left;"><img src="/qr/<%=sess.user.address%>"></div>
+                              
+                            
+                             
+                            <span class="droplist"  style="line-break: normal; columns: #333333; float:right;"><p style="margin-bottom: 2px;"><strong><%=sess.user.firstname+" "+sess.user.lastname%></strong>  </p>
+                            <p style="font-size: 14px; margin-bottom: 2px; font-weight:600px !important; text-transform: none;"><%=sess.user.email%></p>
+                            <p style="font-size: 9px; margin-bottom: 2px; font-weight:800px !important; text-transform: none;"><%=sess.user.walletAddress%></p>
+                            <p>Balance: <strong><%=balance%> EVN</strong></p>
+                            
+                              
+                              <p class="banner-btn text-center" style="text-align: left; margin-top: 11px!important; margin-left: 0px!important;">
+                                <a href="/transfer" class="btn btn-primary" style="font-size:12px !important; margin-left:0px !important; ">Transfer</a>
+                                <a href="/profile"  class="btn btn-primary" style="font-size:12px !important;">Update Profile</a>
+                              </p>
+                            
+                       
+                          </span>
+                        </div>
+                          </ul>
+                          <%} else { %>
+                            <ul class="dropdown-menu dropdown-menu-right" style="width:405px;">
+                            
+                              <div>
+                                
+                              
+                              
+                                
+                                <div class="walletAddress" style="width:120px; height:120px; font-size: 11px;">
+                            Create Wallet Address</div>
+                                   
+                               
+                              <span class="droplist"  style="line-break: normal; columns: #333333; float:right;"><p style="margin-bottom: 2px;"><strong><%=sess.user.firstname+" "+sess.user.lastname%></strong>  </p>
+                              <p style="font-size: 14px; margin-bottom: 2px; font-weight:600px !important; text-transform: none;"><%=sess.user.email%></p>
+                              <p style="font-size: 9px; margin-bottom: 2px; font-weight:800px !important; text-transform: none;"><%=sess.user.walletAddress%></p>
+                              <p>Balance: <strong>0 EVN</strong></p>
+                              
+                                
+                                <p class="banner-btn text-center" style="text-align: left; margin-top: 11px!important; margin-left: 0px!important;">
+                                  <a href="/transfer" class="btn btn-primary" style="font-size:12px !important; margin-left:0px !important; ">Transfer</a>
+                                  <a href="/profile"  class="btn btn-primary" style="font-size:12px !important;">Update Profile</a>
+                                </p>
+                              
+                         
+                            </span>
+                          </div>
+                            </ul>
+                            <%}%>
+                        </div>
+                    </li> 
+    
+                <li><a style="font-size: 18px!important;" href="/logout"><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
+               
+                  
+                
+                    <%if(sess.user.country !== "Ind"){%>
+                      <li id="head" >
+                         <p style="margin: 0%;"><span data-e2e="name" style="font-size:15px!important;"class="tickers-desktop__name">BTC</span> <span data-e2e="price" style="font-size:14px!important; font-weight: bold;"class="tickers-desktop__price">$<%=finalbtc%></span> 
+                         </br>
+                           <span data-e2e="name" style="font-size:15px!important;"class="tickers-desktop__name">ETH</span> <span data-e2e="price"style="font-size:14px!important;font-weight: bold;" class="tickers-desktop__price">$<%=eth%></span>
+                       </p>
+                     </li> 
+                   <%}%>
+                   <%if(sess.user.country == "Ind"){%>
+                     <li id="bod" >
+                       <p style="margin: 0%;"><span data-e2e="name" style="font-size:15px!important;"class="tickers-desktop__name">BTC</span> <span data-e2e="price" style="font-size:14px!important; font-weight: bold;"class="tickers-desktop__price">₹<%=finalbtc1%></span> 
+                       </br>
+                         <span data-e2e="name" style="font-size:15px!important;"class="tickers-desktop__name">ETH</span> <span data-e2e="price"style="font-size:14px!important;font-weight: bold;" class="tickers-desktop__price">₹<%=finaleth1%></span>
+                     </p>
+                   </li> 
+                   <%}%>
+                   
+              </nav>
+            <!-- </div>
+          </div> -->
+        </div>
+      </header>
+     
+      <script type="text/javascript"> 
+        $( document ).ready(function() {
+          
+          $("#head").hide();
+            $("#bod").show();
+            $("#inr").hide();
+          $("input:radio").click(function() {
+            if($(this).val() == "head") {
+              $("#head").show();
+              $("#bod").hide();
+              $("#usd").hide();
+              $("#inr").show();
+            } else {
+              $("#head").hide();
+              $("#bod").show();
+              $("#inr").hide();
+              $("#usd").show();
+            }
+          });
+        });
+        </script>
+<body>
+
+</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>    
+ <!-- Start of Zendesk Widget script -->
+ <!-- <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=web_widget/smartchainerssupport.zendesk.com"></script> -->
+ <!-- End of Zendesk Widget script -->
+     <!-- Sponsors end -->            
+<footer id="footer" class="footer ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="copyright-info">
+            <span>Copyright © 2018 Eventica. All Rights Reserved.</span>
+          </div>
+          <!-- Copyright info end -->
+        </div>
+        <!-- Content col end -->
+        <div class="col-md-6">
+          <!-- Footer menu end -->
+          <div class="footer-social text-center">
+            <ul>
+              <li>
+                <a
+                  href="https://www.facebook.com/beingevent"
+                  target="_blank"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/beingevent" target="_blank"
+                  ><i class="fa fa-twitter" target="_blank"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UCjyAFms3tfplMLBr79khb-g"
+                  target="_blank"
+                  ><i class="fa fa-youtube" target="_blank"></i
+                ></a>
+              </li>
+             
+              <li>
+                <a
+                  href="https://www.instagram.com/being_event/"
+                  target="_blank"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://t.me/beingevent" target="_blank"
+                  ><i class="fa fa-paper-plane"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <!-- Footer social end -->
+        </div>
+      </div>
+      <!-- Content row end -->
+    </div>
+    <!-- Container end -->
+    <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix" style="display: block;">
+		
+      <button class="btn btn-primary"> <a href="#" style="color:#ffffff;"  class="cd-top text-replace js-cd-top"><i class="fa fa-angle-up"></i></a></button>
+   
+    </button> 
+    </div>
+  </footer>
+
+</html>
+
+
+
+
+

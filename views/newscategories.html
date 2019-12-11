@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crypto-News</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147461007-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-147461007-1');
+</script>
+	<meta charset="UTF-8">
+
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="We do premier events to help connect like-minded entrepreneurs, industry insiders, investors." />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Open+Sans+Condensed:300|Roboto&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" href="/css/owl-1.css">
+	<link rel="stylesheet" href="/css/owl-2.css">
+	<link href="/css/bootstrap.css" rel="stylesheet">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/boot.css">
+	<script type="text/javascript" src="/jss/qr/jquery.min.js"></script>
+	<script type="text/javascript" src="/jss/qr/qrcode.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150412361-1"></script>
+
+	<style>
+  @media screen and (max-width: 414px) {
+.col-lg-9.col-md-9.col-sm-12.col-xs-12 {
+    width: unset;
+}
+.content{
+	width: 414px!important;
+    align-items: center;
+    align-content: center;
+}
+.container {
+    padding-right:unset!important;
+    padding-left:unset!important;
+    margin-right:unset!important;
+    margin-left:unset!important;
+	width: unset!important;
+}
+.row{
+	margin-right:unset!important;
+    margin-left:unset!important;
+}
+
+  }
+  @media screen and (max-width: 375px) {
+.content{
+	width: 375px!important;
+    align-items: center;
+    align-content: center;
+}
+.container {
+    padding-right:unset!important;
+    padding-left:unset!important;
+    margin-right:unset!important;
+    margin-left:unset!important;
+	width: unset!important;
+}
+.row{
+	margin-right:unset!important;
+    margin-left:unset!important;
+}
+.col-lg-9.col-md-9.col-sm-12.col-xs-12 {
+    width: unset;
+}
+}
+
+
+	.pagination {
+    margin: 10;
+    float: right;
+    margin-right: 64px;
+	margin-bottom: 20px;
+}
+p{
+
+font-size: 16px !important;
+
+text-align: justify;
+}
+.news-para p img{
+	width: 120px;
+
+}
+	
+	</style>
+</head>
+<body>
+  <% include head %>
+<section class="marquee">
+	<div  style="width: 100%!important;">
+		<div class="row" style="margin:0px!important;">
+			<marquee class="marquee" direction="right" scrollamount="5">
+		
+				<div class="marq-in-div">Bitcoin<span>$ <%=finalbtc%></span></div>
+				<div class="marq-in-div">Ethereum<span>$ <%=eth%></span></div>
+				<div class="marq-in-div">XRP<span>$ <%=xrp%></span></div>
+				<div class="marq-in-div">Litecoin<span>$ <%=ltc%></span></div>
+				<div class="marq-in-div">Bitcoin Cash<span>$ <%=btcc%></span></div>
+				<div class="marq-in-div"> EOS<span>$  <%=eos%></span></div>
+				<div class="marq-in-div">Binance Coin<span>$ <%=bnb%></span></div>
+				<div class="marq-in-div">Bitcoin SV<span>$  <%=btcs%></span></div>
+				<div class="marq-in-div">Stellar<span>$  <%=slr%></span></div>
+				<div class="marq-in-div">TRON<span>$  <%=tn%></span></div>
+
+
+		
+	</marquee>
+		</div>
+	</div>
+	
+</section>
+<section>
+	<div class="container" >
+		<div class="row">
+			<div class="event-heading">
+                    <%if(type=="Bitcoin_news"){%>	  <h1>BITCOIN NEWS</h1><%}%>
+                    <%if(type=="Altcoin_news"){%>	  <h1>ALTCOIN NEWS</h1><%}%>
+                    <%if(type=="Regulation_news"){%>	  <h1>REGULATION NEWS</h1><%}%>
+                    <%if(type=="Blockchain_news"){%>	  <h1>BLOCKCHAIN NEWS</h1><%}%>
+                    <%if(type=="Coinmarketcap_news"){%>	  <h1>COINMARKETCAP NEWS</h1><%}%>
+                    <%if(type=="Technical_news"){%>	  <h1>TECHNICAL ANALYSIS</h1><%}%>
+                    <%if(type=="STO_ICO_IEO_news"){%>	  <h1>STO/ICO/IEO NEWS</h1><%}%>
+
+              
+                
+			</div>
+		</div>
+	</div>
+
+</section>
+<section>
+	<div class="container" style="max-width: 1300px!important; width: 1254px; margin-left: 30px !important; margin-right: 30px !important;"  >
+
+
+		<% news.forEach(function(news){ 
+		
+			%>
+		<div class="col-lg-12 col-md-12 border-new">
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+				<div class="new_img">
+					<img src="<%=imageurl+news.proimg%>" alt="new_img" style="width: 240px; height: 160px;">
+				</div>
+			</div>
+			<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+			
+					<div class="news-headline">
+							<a class="newslink" href="/newsdetails/<%=news.id%>">
+						<h1><%=news.newsTitle%></h1>
+					</div>
+		
+			
+					<div class="news-para">
+						<p><%-(news.description).substring(0,100)+"....."%></p>
+					</div>
+				
+				
+			
+					<div class="news-heading-date">
+						<p><%=news.newsDate%></p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<%
+
+
+    });%>
+
+    <%if(news.length>0) {%>
+	<div class="shop-pagination">
+		<div class="pagination">
+				<nav aria-label="Page navigation example">
+						<ul class="pagination justify-content-center">
+							<%if(currentPage==1){%>
+						  <li class="page-item disabled">
+							<a class="page-link" href="" tabindex="-1">Previous</a>
+						  </li>
+						  <%} else {%>
+
+							<li class="page-item">
+									<a class="page-link" href="/newscategories/<%=type%>/<%= parseInt(currentPage) - 1 %>/" tabindex="-1">Previous</a>
+								  </li>
+								  <%}%>
+						  <%for(var i=1; i<=pages;i++){%>
+						  <li class="page-item <%if(i==currentPage){%>active <%}%>"><a class="page-link" href="/newscategories/<%=type%>/<%=i%>/"><%=i%></a></li>
+						
+						<%}%>
+						<%if(currentPage != pages){%>
+						  <li class="page-item">
+							<a class="page-link" href="/newscategories/<%=type%>/<%= parseInt(currentPage) + 1 %>/">Next</a>
+						  </li>
+						<%}else {%>
+							<li class="page-item disabled">
+									<a class="page-link" href="">Next</a>
+								  </li>
+								  <%}%>
+						</ul>
+					  </nav>
+	   </div>
+	   
+	  
+	  
+		
+	
+    </div>
+    <%}%>
+</div>
+</section>
+<%if(news.length==0){%>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+<%}%>
+<%if(news.length<=3) {%>
+    </br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+<%}%>
+
+
+<% include footer %>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+	<script src="/js/main.js"></script>
+	<script src="/jss/jquery.js"></script>
+ <script src="/jss/list-builder.js"></script>
+ <script src="/jss/move/util.js"></script>
+ <script src="/jss/move/main.js"></script>
+</body>
+</html>

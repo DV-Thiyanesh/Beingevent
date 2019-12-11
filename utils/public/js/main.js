@@ -1,0 +1,154 @@
+$('.baner').owlCarousel({
+    items:1,
+	loop:true,
+	nav:true,
+	dots:false,
+	loop:true,
+    margin:0,
+	autoplay:true,
+    autoplayTimeout:4000,
+    autoplayHoverPause:true,
+	 smartSpeed:450
+
+});	
+$('.group').owlCarousel({
+    items:1,
+	loop:true,
+	nav:true,
+	loop:true,
+    margin:0,
+	
+});
+
+$(document).ready(function(){
+  $("#ico").click(function(){
+    $("#ico-close").hide();
+  });
+  $("#ico-read").click(function(){
+    $("#ico-close").show();
+  });
+});
+
+$(document).ready(function(){
+  $("#exhibitor").click(function(){
+    $("#exhibitor-close").hide();
+  });
+  $("#exhibitor-read").click(function(){
+    $("#exhibitor-close").show();
+  });
+});
+$(document).ready(function(){
+  $("#Sponsor").click(function(){
+    $("#Sponsor-close").hide();
+  });
+  $("#Sponsor-read").click(function(){
+    $("#Sponsor-close").show();
+  });
+});
+
+$(document).ready(function(){
+  $("#attendee").click(function(){
+    $("#attendee-close").hide();
+  });
+  $("#attendee-read").click(function(){
+    $("#attendee-close").show();
+  });
+});
+
+$(document).ready(function(){
+  $("#investors").click(function(){
+    $("#investors-close").hide();
+  });
+  $("#investors-read").click(function(){
+    $("#investors-close").show();
+  });
+});
+
+$(document).ready(function(){
+  $("#influencer").click(function(){
+    $("#influencer-close").hide();
+  });
+  $("#influencer-read").click(function(){
+    $("#influencer-close").show();
+  });
+});
+
+
+$(document).ready(function(){
+  $("#chain-close").click(function(){
+    $("#chain-con").hide();
+  });
+  $("#chain-read").click(function(){
+    $("#chain-con").show();
+  });
+});
+
+$(document).ready(function(){
+  $("#INVESTOR-close").click(function(){
+    $("#INVESTOR").hide();
+  });
+  $("#INVESTOR-SUBMMIT").click(function(){
+    $("#INVESTOR").show();
+  });
+});
+
+$(document).ready(function(){
+  $("#EXPO-close").click(function(){
+    $("#EXPO").hide();
+  });
+  $("#EXPO-read").click(function(){
+    $("#EXPO").show();
+  });
+});
+$(document).ready(function(){
+  $("#CONVENTION-close").click(function(){
+    $("#CONVENTION-on").hide();
+  });
+  $("#CONVENTION").click(function(){
+    $("#CONVENTION-on").show();
+  });
+});
+$(document).ready(function(){
+  $("#investor-close").click(function(){
+    $("#investor-on").hide();
+  });
+  $("#investor-read").click(function(){
+    $("#investor-on").show();
+  });
+});
+$(document).ready(function(){
+  $("#Fintech-close").click(function(){
+    $("#Fintech-on").hide();
+  });
+  $("#Fintech-read").click(function(){
+    $("#Fintech-on").show();
+  });
+});
+$(document).ready(function(){
+  $("#Gala-close").click(function(){
+    $("#Gala-on").hide();
+  });
+  $("#Gala-read").click(function(){
+    $("#Gala-on").show();
+  });
+});
+$(document).ready(function(){
+  $("#pitch-close").click(function(){
+    $("#pitch-on").hide();
+  });
+  $("#pitch-read").click(function(){
+    $("#pitch-on").show();
+  });
+});
+$(document).ready(function(){
+  $("#advisory-close").click(function(){
+    $("#advisory-on").hide();
+  });
+  $("#advisory-read").click(function(){
+    $("#advisory-on").show();
+  });
+});
+
+$('#toggle-sliding').click(function(){
+            $('nav').slideToggle('slow');
+    });

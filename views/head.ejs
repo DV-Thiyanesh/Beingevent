@@ -1,0 +1,150 @@
+<header>
+	<div style="width: 100%!important; margin: 0px;">
+		<div class="row">
+			<div class="col-lg-2 col-md-2 col-sm-6">
+				<div class="logo">
+					<a href="/"><img src="/images/logo.png" style="margin-left: 10px;" alt="logo"></a>
+				</div>
+			</div>
+			<div class="col-lg-10 col-md-10 mobile col-sm-6">
+				<div class="menu">
+					<nav>
+						<ul>
+								<li <% if (page_name === 'home') { %>class="active" <% } %> ><a href="/">HOME </a></li>
+								<li <% if (page_name === 'about') { %>class="active" <% } %>><a href="/aboutus">ABOUT US</a></li>
+							
+							<li <% if (page_name === 'events') { %>class="active" <% } %>><a href="/events/1">EVENTS</a>
+							
+								<ul class="sub-menu">
+										
+									<li><a href="/events/1">upcoming EVENTS</a></li>
+									<li><a href="/eventhistory/1">previous EVENTS</a></li>
+								</ul>
+							</li>
+							<li <% if (page_name === 'news') { %>class="active" <% } %>><a href="/cryptonews/1">CRYPTO NEWS</a></li>
+							<li <% if (page_name === 'blog') { %>class="active" <% } %>><a href="/blog">BLOG</a></li>
+						
+							<li <% if (page_name === 'contact') { %>class="active" <% } %>><a href="/contactus">CONTACT US</a></li>
+							<li style="padding-top: 8px; padding-bottom: 13px; padding-right: 0px; padding-left: 0px;"><a href="https://play.google.com/store/apps/details?id=io.eventica.wallet" target="_blank"><img src="/imagess/google-play-badge.png" class="apk" style="display:block; color: #ffffff!important; width: 147px; height: 63px;"/></a></li>
+							
+						
+							<% if(sess.user == null) {%>
+							<li><a href="/signin"><i class="fa fa-sign-in"></i>LOGIN</a></li>
+							<%}%>
+						
+								<% if(sess.user != null) {%>
+									<li>
+										<div class="dropdown">
+											<i class="fa fa-user" class="btn btn-primary dropdown-toggle" style="color: cornsilk;     font-size: 15px;" aria-hidden="true" data-toggle="dropdown"></i>
+											<% if(sess.user.address) {%>
+										  <ul class="dropdown-menu dropdown-menu-right" style="width:345px;">
+											
+											<div>
+											  
+											
+										   
+										
+											<div style="width:52px; float: left; height: 100px;"><img src="/qr/<%=sess.user.address%>" style="margin: 0px; display: unset!important;     padding-top: 5px;"></div>
+											  
+											
+											 
+											<span class="droplist"  style="line-break: normal; columns: #333333; float:right;"><p style="margin-bottom: 2px;"><strong><%=sess.user.firstname+" "+sess.user.lastname%></strong>  </p>
+											<p style="font-size: 14px !important; margin-bottom: 2px; font-weight:600px !important; text-transform: none;"><%=sess.user.email%></p>
+											<p style="font-size: 9px !important; margin-bottom: 2px; font-weight:800px !important; text-transform: none;"><%=sess.user.address%></p>
+											<p>Balance: <strong><%=balance%> EVN</strong></p>
+											
+											  
+											  <p class="banner-btn text-center" style="text-align: left; margin-top: 11px!important; margin-left: 0px!important;">
+												<a href="/transfer" class="btn btn-primary" style="font-size:12px !important; margin-left:0px !important; ">Transfer</a>
+												<a href="/profile"  class="btn btn-primary" style="font-size:12px !important;">Update Profile</a>
+											  </p>
+											
+									   
+										  </span>
+										</div>
+										  </ul>
+										  <%} else { %>
+											<ul class="dropdown-menu dropdown-menu-right" style="width:410px;">
+											
+											  <div>
+												
+											  
+											  
+												
+												  <div class="walletAddress" id="walletaddress"  style="width:120px; height:120px; font-size: 11px; padding-top: 33px;">
+													  Create Wallet Address</div>
+												   
+											   
+											  <span class="droplist"  style="line-break: normal; columns: #333333; float:right;"><p style="margin-bottom: 2px;"><strong><%=sess.user.firstname+" "+sess.user.lastname%></strong>  </p>
+											  <p style="font-size: 14px; margin-bottom: 2px; font-weight:600px !important; text-transform: none;"><%=sess.user.email%></p>
+											  <p style="font-size: 9px; margin-bottom: 2px; font-weight:800px !important; text-transform: none;"><%=sess.user.address%></p>
+											  <p>Balance: <strong>0 EVN</strong></p>
+											  
+												
+												<p class="banner-btn text-center" style="text-align: left; margin-top: 11px!important; margin-left: 0px!important;">
+												  <a href="/transfer" class="btn btn-primary" style="font-size:12px !important; margin-left:0px !important; ">Transfer</a>
+												  <a href="/profile"  class="btn btn-primary" style="font-size:12px !important;">Update Profile</a>
+												</p>
+											  
+										 
+											</span>
+										  </div>
+											</ul>
+											<%}%>
+										</div>
+									</li> 
+
+								<li><a href="/logout"><i class="fa fa-sign-out""></i>LOGOUT</a></li>
+
+								<%}%>
+						</ul>
+					</nav>
+
+				</div>
+				<span id="toggle-sliding"><img src="/images/menu.png" alt="menu"></span>
+			</div>
+		</div>
+	</div>
+</header>
+
+<script type="text/javascript">
+	$('#walletaddress').click(function(){
+	  console.log("walletaddress")
+	  
+	  
+	  $.get("/walletaddress", function(data, status){
+	  
+	   console.log("data",data);
+	   console.log("status",status);
+  
+  
+  
+		  // console.log("seed",seedHash);
+	  
+	  if(status == "success"){
+		  // alert(data);
+  
+		  swal({
+			 title:"Wallet address has Created",
+			 text: data,
+			 buttons: {
+					cancel: true,
+					confirm: "Ok"
+					  }
+	  }).then( val => {
+			 if(val)  {
+			  window.open("signin","_self");
+					  }
+	  });
+	  
+	  
+	  }
+  
+  console.log("out")
+  // $.load( "signin.html" );
+  
+	  });
+  
+  });
+	  
+	  </script>   

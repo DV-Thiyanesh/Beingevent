@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EVN-Transfer</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147461007-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-147461007-1');
+</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="We do premier events to help connect like-minded entrepreneurs, industry insiders, investors." />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Open+Sans+Condensed:300|Roboto&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" href="/css/owl-1.css">
+	<link rel="stylesheet" href="/css/owl-2.css">
+	<link href="/css/bootstrap.css" rel="stylesheet">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/boot.css">
+	<script type="text/javascript" src="/jss/qr/jquery.min.js"></script>
+	<script type="text/javascript" src="/jss/qr/qrcode.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150412361-1"></script>
+
+	<style>
+			.transferbtn{
+		
+		margin-top: 20px; 
+		background-color:#ff0673 !important; 
+		font-weight: bold !important; 
+		color:#ffffff !important; 	
+		position: absolute;
+						
+							background: #ff0673 !important;
+font-size: 1.0em!important;
+border: #ff0673 !important;
+letter-spacing: 2px !important;
+border-radius: 5px !important;
+font-weight: 400 !important;
+color: #ffffff !important;
+padding: 7px 16px 9px !important;
+	}
+	td {
+			width: 80px;
+		}
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			margin-bottom: 1rem;
+			border-radius: 0;
+		}
+.inputid{
+	margin-left:15px;
+}
+		.tickers-desktop__list {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			-webkit-box-flex: 2;
+			-ms-flex-positive: 2;
+			flex-grow: 2;
+		}
+
+		.tickers-desktop__item {
+			border-right: 1px solid #324149;
+			padding: 0 15px;
+			/* -webkit-box-sizing: border-box; */
+			box-sizing: border-box;
+		}
+
+		.tickers-desktop__name {
+			font-size: inherit;
+			font-weight: 100;
+			color: #fabf2c;
+		}
+
+		.tickers-desktop__price {
+			font-size: inherit;
+			color: #fff;
+		}
+
+		.tickers-desktop__link {
+			text-decoration: none;
+			font-size: 13px;
+			line-height: 1;
+			display: block;
+		}
+
+		#header .row {
+			margin-right: -326px;
+			margin-left: -176px;
+		}
+
+		.table-bordered {
+			width: 50%;
+
+			margin-left: 33px;
+			;
+
+		}
+.box1 {
+    width: 600px;
+    height: 300px;
+    border-top: 116px;
+    margin-top: 100px;
+    margin-left: 34px;
+}
+.mtb-50 {
+    margin-top: 50px!important;
+    margin-bottom: 50px!important;
+}
+.p-title {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+h4 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+	margin-top: 10px;
+}
+b, strong {
+    font-weight: 700;
+}
+.mb-20 {
+    margin-bottom: 20px!important;
+}
+form label{
+	color:#000;
+}
+.p-title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 80px;
+    height: 5px;
+    z-index: 1;
+    background: rgb(249, 181, 0);
+}
+.p-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+}
+	</style>
+</head>
+<body>
+  <% include head %>
+<section class="marquee">
+	<div  style="width: 100%!important;">
+		<div class="row" style="margin:0px!important;">
+			<marquee class="marquee" direction="right" scrollamount="5">
+		
+				<div class="marq-in-div">Bitcoin<span>$ <%=finalbtc%></span></div>
+				<div class="marq-in-div">Ethereum<span>$ <%=eth%></span></div>
+				<div class="marq-in-div">XRP<span>$ <%=xrp%></span></div>
+				<div class="marq-in-div">Litecoin<span>$ <%=ltc%></span></div>
+				<div class="marq-in-div">Bitcoin Cash<span>$ <%=btcc%></span></div>
+				<div class="marq-in-div"> EOS<span>$  <%=eos%></span></div>
+				<div class="marq-in-div">Binance Coin<span>$ <%=bnb%></span></div>
+				<div class="marq-in-div">Bitcoin SV<span>$  <%=btcs%></span></div>
+				<div class="marq-in-div">Stellar<span>$  <%=slr%></span></div>
+				<div class="marq-in-div">TRON<span>$  <%=tn%></span></div>
+
+
+		
+	</marquee>
+		</div>
+	</div>
+	
+</section>
+<section>
+		<div class="container" >
+				<div class="box1">
+						<div class="mtb-50 mb-md-0">
+												<h4 class="p-title"><b>TRANSFER TO FRIENDS</b></h4>
+												Your  Balance:<p class="mb-20"  id ="balance" name="balance" style=" margin-left: 19%;margin-top: -4%; font-weight:bolder"> <%=balance%></p> 
+												<p style="margin-top: -44px;
+												margin-left: 44%;">EVN</p>
+												<form id="transfer" class="social-logins" action="/transfer" method="post">
+														
+													
+													<!-- <button style="width: 90px !important;  background-color:#ff0673 !important; font-weight: bold !important; color:#ffffff !important;"  >Send To</button> -->
+													<label>SEND TO</label>
+													<p id ="transfertoast" style="color:red;" >Invalid Address</p>
+													<input class="inputid" type="text" name="address" id="address" style="border-color: #ff0673!important; height:45px;  width:450px; margin-left:30px;" required /></br>
+													<label>AMOUNT</label>
+												
+													<input  class="inputid" type="number" name="amount" id="amount" style="border-color: #ff0673!important; height:45px;  width:250px; margin-top: 15px;margin-left:30px;"required /></br>
+													<label>PASSWORD</label>
+												
+													<input  class="inputid" type="password" name="phrase" id="phrase" style="border-color: #ff0673!important; height:45px;  width:250px; margin-top: 15px; margin-left:8px; " required/></br>
+													<button class="transferbtn">Transfer</button>
+												</form> 
+												
+												<!-- <p id ="toast" style="color:red;" >Amount is Greater than UserBalance</p> -->
+											</div>
+					
+											
+										
+									</div>
+					<br><br>
+					<script>
+					
+					$( document ).ready(function() {
+						$('#transfertoast').hide()
+						$("#toast").hide();
+							  $('#amount').bind('input', function() {
+						var txtVal = this.value;
+						//  console.log(this.value);
+						 var userbalance= $('#balance').text();
+						// console.log(userbalance,"userbalance")
+						 if(parseFloat(this.value) <= userbalance){
+							//  console.log("zero")
+							 $("#toast").hide();
+						 }
+						 else{
+						
+							this.value="";
+							$("#toast").show();
+					// console.log("amtvalue")
+							//  console.log("value")
+						 }	
+							 
+							})
+					
+					
+					$('#address').bind('blur',function() {
+						
+						var addressvalue=this.value;
+					
+						// console.log(this.value)
+					
+					 new Promise((resolve, reject)=> {
+								try{
+									resolve({status: self.web3.isAddress(addressvalue)})
+								  
+								}catch(err) {
+									reject('Please try after sometime')
+									console.log("err")
+								}
+							}).then(function(resolve){
+								// console.log(resolve.status,"resolve")
+								if(resolve.status==true){
+									// console.log("false")
+								
+								}
+								else{
+										$('#address').val("")
+							
+							
+									$('#transfertoast').show()
+									// console.log("true")
+								}
+							}
+					
+							)
+						
+					})
+					
+					
+						})
+							
+								</script>
+								</br></br>
+							</br></br>
+									<div>
+									<table id="tablePreview" class="table table-striped table-hover table-sm table-bordered " >
+											<div class="panel-heading" style="background-color: #ff0673!important; width:50%;margin-left:35px;font-weight: 500;
+											color: #fff;
+											text-transform: uppercase">
+													<h6 class="panel-title">Transaction</h6>
+												</div>	
+											</br>
+										  <thead>
+											<th>#</th>
+											 
+											  <th>To</th>
+											  <th>value</th>
+											  <th>hash</th>
+										
+											</tr>
+										  </thead>
+										 
+										  <tbody>
+												<%if(sess.user.address){%>
+												<% 
+												sno = 1;
+												transactions.forEach(function(transaction) { %>
+												<tr>
+												  <td scope="row"><%=sno++%></td>
+												
+												  <td><%=transaction.to%></td>
+												  <td><%=transaction.value%></td>
+												  <td><%=transaction.hash%></td>
+											   
+												</tr>
+												<% }); } %>
+					
+											  </tbody>
+										  <!--Table body-->
+										</table>
+									</div>
+		</div>
+		</section>
+	</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+		<% include footer %>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+	  <script src="/js/main.js"></script>
+	  <script src="/jss/jquery.js"></script>
+   <script src="/jss/list-builder.js"></script>
+   <script src="/jss/move/util.js"></script>
+   <script src="/jss/move/main.js"></script>
+  </body>
+  </html>
